@@ -1,5 +1,11 @@
-// shape.h
-// ENSF 614 Lab 5 Exercise A
+/*
+ *  shape.h
+ *  ENSF 614 Lab 5, Exercise A
+ *  Class Header file for Shape.
+ *  Completed by: Hassaan Ahmed Zuberi
+ *  Submitted on: Oct 22, 2022
+ */
+
 #include "point.h"
 
 #ifndef SHAPE_H

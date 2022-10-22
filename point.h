@@ -1,5 +1,10 @@
-// point.h
-// ENSF 614 Lab 5 Exercise A
+/*
+ *  point.h
+ *  ENSF 614 Lab 5, Exercise A
+ *  Class Header file for Point.
+ *  Completed by: Hassaan Ahmed Zuberi
+ *  Submitted on: Oct 22, 2022
+ */
 
 #ifndef POINT_H
 #define POINT_H

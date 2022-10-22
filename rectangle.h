@@ -1,5 +1,11 @@
-// rectangle.h
-// ENSF 614 Lab 5 Exercise A
+/*
+ *  rectangle.h
+ *  ENSF 614 Lab 5, Exercise A
+ *  Class Header file for Rectangle.
+ *  Completed by: Hassaan Ahmed Zuberi
+ *  Submitted on: Oct 22, 2022
+ */
+
 #include "square.h"
 
 #ifndef RECTANGLE_H
