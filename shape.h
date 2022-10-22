@@ -18,7 +18,7 @@ public:
     const char* getName() const;
     void move (double dx, double dy);
     double distance(Shape &other);
-    static double distance(Shape &the_point, Shape &other);
+    static double distance(Shape &the_shape, Shape &other);
     virtual void display() const;
     Shape(const Shape& source);
     Shape& operator =(const Shape& rhs);
