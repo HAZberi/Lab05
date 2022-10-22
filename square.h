@@ -12,9 +12,9 @@ private:
 
 public:
     Square(double x, double y, double sideA, const char *name);
-    virtual double area();
-    virtual double perimeter();
-    void set_side_a();
+    virtual double area() const;
+    virtual double perimeter() const;
+    void set_side_a(double val);
     double get_side_a() const;
     virtual void display() const;
     Square(const Square& source);

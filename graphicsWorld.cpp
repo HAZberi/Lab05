@@ -16,7 +16,7 @@ using namespace std;
 
 void GraphicsWorld::run()
 {
-#if 1 // Change 0 to 1 to test Point
+#if 0 // Change 0 to 1 to test Point
     Point m(6, 8);
     Point n(6, 8);
     n.setx(9);
@@ -26,7 +26,7 @@ void GraphicsWorld::run()
     cout << "\nThe distance between m and n is again: " << Point::distance(m, n) << "\n";
 #endif
 
-#if 0 // Change 0 to 1 to test Square
+#if 1 // Change 0 to 1 to test Square
 cout << "\n\nTesting Functions in class Square:" <<endl;
 Square s(5, 7, 12, "SQUARE - S");
 s.display();

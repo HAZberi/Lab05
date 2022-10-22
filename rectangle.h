@@ -11,8 +11,8 @@ private:
     double side_b;
 
 public:
-    double area();
-    double perimeter();
+    double area() const;
+    double perimeter() const;
     void display() const;
     void set_side_b();
     void get_side_b();

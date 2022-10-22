@@ -10,7 +10,6 @@ class Shape
 private:
     Point origin;
     char *shapeName;
-
 public:
     Shape(double x, double y, const char *name);
     const Point& getOrigin() const;
