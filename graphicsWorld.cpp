@@ -17,7 +17,7 @@ using namespace std;
 
 void GraphicsWorld::run()
 {
-#if 0 // Change 0 to 1 to test Point
+#if 1 // Change 0 to 1 to test Point
     Point m(6, 8);
     Point n(6, 8);
     n.setx(9);
