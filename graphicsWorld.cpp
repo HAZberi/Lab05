@@ -27,7 +27,7 @@ void GraphicsWorld::run()
     cout << "\nThe distance between m and n is again: " << Point::distance(m, n) << "\n";
 #endif
 
-#if 0 // Change 0 to 1 to test Square
+#if 1 // Change 0 to 1 to test Square
 cout << "\n\nTesting Functions in class Square:" <<endl;
 Square s(5, 7, 12, "SQUARE - S");
 s.display();
@@ -64,6 +64,18 @@ cout << "Rectangle Name: RECTANGLE A\n" << "X-coordinate: 5\n" << "Y-coordinate:
 cout << "\nIf it doesn't there is a problem with your assignment operator.\n" << endl;
 rec3.display();
 #endif // end of block to test Rectangle
+#if 1 // Change 0 to 1 to test using array of pointer and polymorphism
+cout << "\nTesting array of pointers and polymorphism:" <<endl;
+Shape* sh[4];
+sh[0] = &s;
+sh[1] = &b;
+sh [2] = &rec1;
+sh [3] = &rec3;
+sh [0]->display();
+sh [1]->display();
+sh [2]->display();
+sh [3]->display();
+#endif // end of block to test array of pointer and polymorphism
 }
 
 int main()
