@@ -33,6 +33,7 @@ Rectangle &Rectangle::operator=(const Rectangle &rhs)
 {
     if (this != &rhs)
     {
+        setName(rhs.getName());
         setOrigin(rhs.getOrigin().getx(), rhs.getOrigin().gety());
         set_side_a(rhs.get_side_a());
         set_side_b(rhs.get_side_b());
@@ -54,5 +55,5 @@ double Rectangle::perimeter() const
 void Rectangle::display() const
 {
     cout.precision(2);
-    cout << "Rectangle Name: " << this->getName() << "\nX-coordinate: " << fixed << this->getOrigin().getx() << "\nY-coordinate: " << fixed << this->getOrigin().gety() << "\nSide a: " << this->get_side_a() << "\nSide b: " << this->get_side_b() << "\nArea: " << this->area() << "\nPerimeter: " << this->perimeter() << "\n";
+    cout << "\nRectangle Name: " << this->getName() << "\nX-coordinate: " << fixed << this->getOrigin().getx() << "\nY-coordinate: " << fixed << this->getOrigin().gety() << "\nSide a: " << this->get_side_a() << "\nSide b: " << this->get_side_b() << "\nArea: " << this->area() << "\nPerimeter: " << this->perimeter() << "\n";
 }

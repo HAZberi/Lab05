@@ -28,6 +28,10 @@ const char *Shape::getName() const
     return shapeName;
 }
 
+void Shape::setName(const char* name){
+    strcpy(shapeName, name);
+}
+
 void Shape::setOrigin(double x, double y)
 {
     origin = Point(x, y);
@@ -67,7 +71,7 @@ double Shape::distance(Shape &the_shape, Shape &other)
 void Shape::display() const
 {
     cout.precision(2);
-    cout << "Shape Name: " << shapeName << "\nX-coordinate: " << fixed << origin.getx() << "\nY-coordinate: " << fixed << origin.gety();
+    cout << "\nShape Name: " << shapeName << "\nX-coordinate: " << fixed << origin.getx() << "\nY-coordinate: " << fixed << origin.gety();
 }
 
 Shape::~Shape()

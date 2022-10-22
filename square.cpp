@@ -33,6 +33,7 @@ Square &Square::operator=(const Square &rhs)
 {
     if (this != &rhs)
     {
+        setName(rhs.getName());
         setOrigin(rhs.getOrigin().getx(), rhs.getOrigin().gety());
         set_side_a(rhs.get_side_a());
     }
@@ -53,5 +54,5 @@ double Square::perimeter() const
 void Square::display() const
 {
     cout.precision(2);
-    cout << "Square Name: " << this->getName() << "\nX-coordinate: " << fixed << this->getOrigin().getx() << "\nY-coordinate: " << fixed << this->getOrigin().gety() << "\nSide a:" << side_a << "\nArea: " << this->area() << "\nPerimeter: " << this->perimeter() << "\n";
+    cout << "\nSquare Name: " << this->getName() << "\nX-coordinate: " << fixed << this->getOrigin().getx() << "\nY-coordinate: " << fixed << this->getOrigin().gety() << "\nSide a:" << side_a << "\nArea: " << this->area() << "\nPerimeter: " << this->perimeter() << "\n";
 }

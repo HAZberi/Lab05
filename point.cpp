@@ -72,5 +72,5 @@ double Point::distance(Point &the_point, Point &other)
 void Point::display() const
 {
     cout.precision(2);
-    cout << "Point " << id << "\nX-coordinate: " << fixed << x << "\nY-coordinate: " << fixed << y;
+    cout << "\nPoint " << id << "\nX-coordinate: " << fixed << x << "\nY-coordinate: " << fixed << y;
 }
