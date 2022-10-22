@@ -9,7 +9,7 @@ class Point
 private:
     double x, y;
     int id;
-    static int counter;
+    static int count;
 
 public:
     Point(double x, double y);
@@ -17,10 +17,12 @@ public:
     void sety(double val);
     double getx() const;
     double gety() const;
-    int counter() const;
+    static int counter();
     double distance(Point &other);
     static double distance(Point &the_point, Point &other);
     void display() const;
+    Point(const Point& source);
+    Point& operator =(const Point& rhs);
 };
 
 #endif

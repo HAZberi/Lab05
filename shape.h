@@ -12,15 +12,17 @@ private:
     char *shapeName;
 
 public:
-    Shape(Point org, char *name);
-    void set_x(double val);
-    void set_y(double val);
-    double getOrigin() const;
+    Shape(double x, double y, const char *name);
+    const Point& getOrigin() const;
+    void setOrigin(double x, double y);
+    const char* getName() const;
     void move (double dx, double dy);
     double distance(Shape &other);
     static double distance(Shape &the_point, Shape &other);
-    void display() const;
-    ~Shape();
+    virtual void display() const;
+    Shape(const Shape& source);
+    Shape& operator =(const Shape& rhs);
+    virtual ~Shape();
 };
 
 #endif
