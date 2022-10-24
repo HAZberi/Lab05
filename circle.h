@@ -1,7 +1,7 @@
 /*
  *  circle.h
  *  ENSF 614 Lab 5, Exercise B
- *  Class Header file for Square.
+ *  Class Header file for Circle.
  *  Completed by: Hassaan Ahmed Zuberi
  *  Submitted on: Oct 24, 2022
  */
@@ -11,7 +11,7 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-class Circle: public Shape
+class Circle: virtual public Shape
 {
 private:
     double radius;

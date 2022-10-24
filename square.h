@@ -11,7 +11,7 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
-class Square: public Shape
+class Square: virtual public Shape
 {
 private:
     double side_a;

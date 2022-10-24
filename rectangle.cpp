@@ -13,7 +13,7 @@
 
 using namespace std;
 
-Rectangle::Rectangle(double x1, double y1, double a, double b, const char *name) : Square(x1, y1, a, name)
+Rectangle::Rectangle(double x1, double y1, double a, double b, const char *name) : Square(x1, y1, a, name), Shape(x1, y1, name)
 {
     side_b = b;
 }
@@ -25,7 +25,7 @@ double Rectangle::get_side_b() const
 {
     return side_b;
 }
-Rectangle::Rectangle(const Rectangle &source) : Square(source.getOrigin().getx(), source.getOrigin().gety(), source.get_side_a(), source.getName())
+Rectangle::Rectangle(const Rectangle &source) : Square(source.getOrigin().getx(), source.getOrigin().gety(), source.get_side_a(), source.getName()), Shape(source.getOrigin().getx(), source.getOrigin().gety(), source.getName())
 {
     side_b = source.get_side_b();
 }

@@ -18,9 +18,9 @@ private:
 
 public:
     Rectangle(double x1, double y1, double a, double b, const char *name);
-    double area() const;
-    double perimeter() const;
-    void display() const;
+    virtual double area() const;
+    virtual double perimeter() const;
+    virtual void display() const;
     void set_side_b(double val);
     double get_side_b() const;
     Rectangle(const Rectangle& source);

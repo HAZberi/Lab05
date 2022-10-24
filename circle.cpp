@@ -1,6 +1,6 @@
 /*
  *  circle.cpp
- *  ENSF 614 Lab 5, Exercise A
+ *  ENSF 614 Lab 5, Exercise B
  *  Class implemenatation for Circle.
  *  Completed by: Hassaan Ahmed Zuberi
  *  Submitted on: Oct 22, 2022
@@ -54,5 +54,5 @@ double Circle::perimeter() const
 void Circle::display() const
 {
     cout.precision(2);
-    cout << "\nCircle Name: " << this->getName() << "\nX-coordinate: " << fixed << this->getOrigin().getx() << "\nY-coordinate: " << fixed << this->getOrigin().gety() << "\nRadius: " << radius << "\nArea: " << this->area() << "\nPerimeter: " << this->perimeter() << "\n";
+    cout << "\nCircle Name: " << this->getName() << "\nX-coordinate: " << fixed << this->getOrigin().getx() << "\nY-coordinate: " << fixed << this->getOrigin().gety() << "\nRadius: " << radius << "\n";
 }
