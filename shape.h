@@ -29,6 +29,8 @@ public:
     virtual void display() const;
     Shape(const Shape &source);
     Shape &operator=(const Shape &rhs);
+    virtual double area() const = 0;
+    virtual double perimeter() const = 0;
     virtual ~Shape();
 };
 

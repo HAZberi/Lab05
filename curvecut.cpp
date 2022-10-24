@@ -34,11 +34,11 @@ CurveCut &CurveCut::operator=(const CurveCut &rhs)
 {
     if (this != &rhs)
     {
-        setName(rhs.getName());
-        setOrigin(rhs.getOrigin().getx(), rhs.getOrigin().gety());
-        set_radius(rhs.get_radius());
-        set_side_a(rhs.get_side_a());
-        set_side_b(rhs.get_side_b());
+        this->setName(rhs.getName());
+        this->setOrigin(rhs.getOrigin().getx(), rhs.getOrigin().gety());
+        this->set_radius(rhs.get_radius());
+        this->set_side_a(rhs.get_side_a());
+        this->set_side_b(rhs.get_side_b());
     }
 
     return *this;
