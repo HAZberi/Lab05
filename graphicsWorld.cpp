@@ -11,6 +11,7 @@
 #include "shape.h"
 #include "square.h"
 #include "rectangle.h"
+#include "circle.h"
 #include <iostream>
 
 using namespace std;
@@ -76,6 +77,15 @@ sh [1]->display();
 sh [2]->display();
 sh [3]->display();
 #endif // end of block to test array of pointer and polymorphism
+#if 1
+cout << "\nTesting Functions in class Circle:" <<endl;
+Circle c (3, 5, 9, "CIRCLE C");
+c.display();
+cout << "the area of " << c.getName() <<" is: "<< c.area() << endl;
+cout << "the perimeter of " << c.getName() << " is: "<< c.perimeter() << endl;
+d = a.distance(c);
+cout << "\nThe distance between rectangle a and circle c is: " <<d << "\n";
+#endif
 }
 
 int main()
