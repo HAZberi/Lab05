@@ -25,7 +25,7 @@ Point::Point(double x1, double y1)
 Point::Point(const Point &source)
 {
     x = source.x;
-    y = source.x;
+    y = source.y;
     id = source.id;
 }
 

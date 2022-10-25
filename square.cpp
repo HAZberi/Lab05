@@ -25,7 +25,7 @@ double Square::get_side_a() const
 {
     return side_a;
 }
-Square::Square(const Square &source) : Shape(source.getOrigin().getx(), source.getOrigin().gety(), source.getName())
+Square::Square(const Square &source) : Shape(source)
 {
     side_a = source.get_side_a();
 }

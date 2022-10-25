@@ -25,7 +25,7 @@ double Circle::get_radius() const
 {
     return radius;
 }
-Circle::Circle(const Circle &source) : Shape(source.getOrigin().getx(), source.getOrigin().gety(), source.getName())
+Circle::Circle(const Circle &source) : Shape(source)
 {
     radius = source.get_radius();
 }

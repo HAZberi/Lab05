@@ -25,7 +25,7 @@ double Rectangle::get_side_b() const
 {
     return side_b;
 }
-Rectangle::Rectangle(const Rectangle &source) : Square(source.getOrigin().getx(), source.getOrigin().gety(), source.get_side_a(), source.getName()), Shape(source.getOrigin().getx(), source.getOrigin().gety(), source.getName())
+Rectangle::Rectangle(const Rectangle &source) : Square(source), Shape(source)
 {
     side_b = source.get_side_b();
 }

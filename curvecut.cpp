@@ -28,7 +28,7 @@ CurveCut::CurveCut(double x1, double y1, double a, double b, double r, const cha
     }
 }    
 
-CurveCut::CurveCut(const CurveCut &source) : Circle(source.getOrigin().getx(), source.getOrigin().gety(), source.get_radius(), source.getName()), Rectangle(source.getOrigin().getx(), source.getOrigin().gety(), source.get_side_a(), source.get_side_b(), source.getName()), Shape(source.getOrigin().getx(), source.getOrigin().gety(), source.getName()){}
+CurveCut::CurveCut(const CurveCut &source) : Circle(source), Rectangle(source), Shape(source){}
 
 CurveCut &CurveCut::operator=(const CurveCut &rhs)
 {
