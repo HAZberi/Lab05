@@ -29,6 +29,8 @@ const char *Shape::getName() const
 }
 
 void Shape::setName(const char* name){
+    delete shapeName;
+    shapeName = new char[strlen(name) + 1];
     strcpy(shapeName, name);
 }
 
@@ -47,8 +49,8 @@ Shape &Shape::operator=(const Shape &rhs)
 {
     if (this != &rhs)
     {
+        setName(rhs.getName());
         origin = rhs.getOrigin();
-        strcpy(shapeName, rhs.getName());
     }
 
     return *this;
