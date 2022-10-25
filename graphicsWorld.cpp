@@ -1,7 +1,7 @@
 /*
- *  point.cpp
- *  ENSF 614 Lab 5, Exercise A
- *  Class implemenatation for Point.
+ *  graphicsWorld.cpp
+ *  ENSF 614 Lab 5, Exercise B
+ *  Class implemenatation for GraphicsWorld.
  *  Completed by: Hassaan Ahmed Zuberi
  *  Submitted on: Oct 22, 2022
  */
